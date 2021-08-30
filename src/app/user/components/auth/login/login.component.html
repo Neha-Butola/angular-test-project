@@ -1,0 +1,23 @@
+<form class="form-card" (ngSubmit)="loginSumbit()">
+  <h1 class="pb-4">Login</h1>
+
+  <div>
+    <input
+      type="text"
+      name="email"
+      placeholder="Enter your Email id"
+      [(ngModel)]="email"
+    />
+    <div class="invalid-feedback"></div>
+  </div>
+  <p>
+    <input
+      type="password"
+      name="password"
+      placeholder="Enter password"
+      [(ngModel)]="password"
+    />
+  </p>
+
+  <button type="submit">Submit</button>
+</form>

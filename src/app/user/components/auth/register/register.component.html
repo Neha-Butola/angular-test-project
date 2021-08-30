@@ -1,0 +1,37 @@
+<form class="form-card" (ngSubmit)="registerSubmit()">
+  <h1 class="pb-4">Create a new account</h1>
+  <p>
+    <input
+      type="text"
+      name="name"
+      placeholder="Enter your Name"
+      [(ngModel)]="register.name"
+    />
+  </p>
+  <div>{{ errors.name }}</div>
+  <p>
+    <input
+      type="text"
+      name="email"
+      placeholder="Enter your Email id"
+      [(ngModel)]="register.email"
+    />
+  </p>
+  <p>
+    <input
+      type="password"
+      name="password"
+      placeholder="Enter password"
+      [(ngModel)]="register.password"
+    />
+  </p>
+  <p>
+    <input
+      type="password"
+      name="password2"
+      placeholder="Retype password"
+      [(ngModel)]="register.password2"
+    />
+  </p>
+  <button type="submit">Submit</button>
+</form>
